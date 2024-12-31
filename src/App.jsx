@@ -1,13 +1,20 @@
 
 
 import './App.css'
+import Bookmarks from './Bookmarks/Bookmarks'
+import Blogs from './components/Blogs/Blogs'
+import Header from './components/Header/Header'
 
 function App() {
  
 
   return (
     <>
-     <h1 className='text-4xl bg-red-400 mt-10 p-10 rounded-full text-white text-center font-bold'>Hello new bangladesh</h1>
+    <Header></Header>
+   <main className='md:flex max-w-6xl mx-auto'>
+     <Blogs></Blogs>
+     <Bookmarks></Bookmarks>
+   </main>
      
     </>
   )
